@@ -45,8 +45,8 @@ def proc_project(proj_name, template, email, password, pix4dexe = '"C:\Program F
 	
 if 	__name__ == "__main__":
 	pix4dexe = '"C:\Program Files\Pix4Dmapper\pix4dmapper.exe"'
-	email = "stfeirer@ucanr.edu"
-	password = "UCANR29049"
+	email = ""
+	password = ""
 	
 	tmpl = "C:/Temp/Python/Thermal_Rapid.tmpl"
 	#tmpl = "C:/Temp/Python/AG_MS_Rapid.tmpl"
@@ -59,6 +59,3 @@ if 	__name__ == "__main__":
 	repname = projname.replace("\\","/").split("/")[-1][:-4]
 	report=projname[:-4]+"/1_initial/report/"+repname+"_report.pdf"
 	s.Popen(report,shell=True)
-
-#--email stfeirer@ucanr.edu --password UCANR29049 -c --template C:\Temp\Python\Thermal_Rapid.tmpl --cam-param-project -i C:\Temp\Python\Images\init.p4d
-#--email stfeirer@ucanr.edu --password UCANR29049 -c -n --image-dir C:\Temp\Python\Images\ C:\Temp\Python\Images\init.p4d
